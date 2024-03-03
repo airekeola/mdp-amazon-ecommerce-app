@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/amazon_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/amazon_logo"
+            android:contentDescription="@string/amazon_logo_desc"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signInText"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_marginTop="30dp"
+            >
+
+            <EditText
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/emailTextHint"
+                android:autofillHints="Email"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:background="@android:color/transparent"
+                />
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"/>
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/passwordTextHint"
+                android:autofillHints="Password"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showPasswordText"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signInBtnText"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/amazonYellow"
+            app:cornerRadius="5dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="1.5dp"
+            />
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/newToAmazonText"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="-13dp"
+            android:paddingHorizontal="15dp"
+            android:background="@color/amazon_bg"
+            />
+
+        <Button
+            android:id="@+id/createAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/createAccountBtnText"
+            android:layout_marginVertical="15dp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/amazonLight"
+            app:cornerRadius="5dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="1.5dp"
+            />
+    </LinearLayout>
+</ScrollView>

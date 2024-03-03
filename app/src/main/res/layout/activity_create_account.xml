@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".CreateAccountActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/amazon_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/amazon_logo"
+            android:contentDescription="@string/amazon_logo_desc"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/createAccountText"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                />
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/nameTextHint"
+                android:autofillHints="Name"
+                android:textSize="16sp"
+                android:padding="15dp"
+                />
+
+            <EditText
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/emailOrNumTextHint"
+                android:autofillHints="@string/emailOrNumTextHint"
+                android:textSize="16sp"
+                android:padding="15dp"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/passwordTextHint"
+                android:autofillHints="Password"
+                android:textSize="16sp"
+                android:padding="15dp"
+                />
+
+            <EditText
+                android:id="@+id/passwordText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password2TextHint"
+                android:autofillHints="Renter Password"
+                android:textSize="16sp"
+                android:padding="15dp"
+                />
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/continueBtnText"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@color/amazonYellow"
+                app:cornerRadius="5dp"
+                app:strokeColor="@android:color/darker_gray"
+                app:strokeWidth="1.5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

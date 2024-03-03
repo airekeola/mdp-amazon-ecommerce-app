@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCategoryActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome John!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:padding="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shop_by_categories"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:padding="40dp">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/kitchen"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/home_and_kitchen"
+                android:clickable="true"
+                android:onClick="onImageBtnClick"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_and_kitchen"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/nail"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/beauty_and_personal_care"
+                android:clickable="true"
+                android:onClick="onImageBtnClick"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beauty_and_personal_care"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pet_food"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/pet_supplies"
+                android:clickable="true"
+                android:onClick="onImageBtnClick"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_supplies"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageButton
+                android:id="@+id/btn4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/puzzle"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/toys_and_games"
+                android:clickable="true"
+                android:onClick="onImageBtnClick"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toys_and_games"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </GridLayout>
+
+</LinearLayout>

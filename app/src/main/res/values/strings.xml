@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Amazon Ecommerce App</string>
+    <string name="amazon_logo_desc">Amazon Logo</string>
+    <string name="signInText">Sign in</string>
+    <string name="emailTextHint">Email</string>
+    <string name="passwordTextHint">Password</string>
+    <string name="showPasswordText">Show password</string>
+    <string name="signInBtnText">Sign in</string>
+    <string name="newToAmazonText">New to Amazon?</string>
+    <string name="createAccountBtnText">Create a new Amazon account</string>
+    <string name="createAccountText">Create Account</string>
+    <string name="nameTextHint">Your name</string>
+    <string name="emailOrNumTextHint">Mobile number or email</string>
+    <string name="password2TextHint">Re-enter password</string>
+    <string name="home_and_kitchen">Home and Kitchen</string>
+    <string name="beauty_and_personal_care">Beauty and personal care</string>
+    <string name="pet_supplies">Pet supplies</string>
+    <string name="toys_and_games">Toys and games</string>
+    <string name="shop_by_categories">Shop by Categories</string>
+    <string name="continueBtnText">Continue</string>
+    <string name="welcome">Welcome %1$s!</string>
+</resources>
